@@ -1,0 +1,193 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #080005;
+    color: #f5f5f5;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .flower-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .flower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #ff69b4 0%, transparent 60%);
+    border-radius: 50%;
+    animation: bloomFlower 6s ease-in-out infinite;
+    opacity: 0.6;
+    transform-origin: center;
+    filter: blur(1px);
+  }
+  
+  /* Positioning flowers around screen */
+  .flower1 {
+    top: 20%;
+    left: 15%;
+    animation-delay: 3s;
+  }
+  
+  .flower2 {
+    top: 60%;
+    left: 70%;
+    background: radial-gradient(circle, #a020f0 0%, transparent 70%);
+    animation-delay: 2s;
+  }
+  
+  .flower3 {
+    top: 35%;
+    left: 45%;
+    background: radial-gradient(circle, #00ced1 0%, transparent 70%);
+    animation-delay: 4s;
+  }
+  .flower4 {
+    top: 85%;
+    left: 45%;
+    background: radial-gradient(circle, #10d738 0%, transparent 70%);
+    animation-delay: 2s;
+  }
+  .flower5 {
+    top: 85%;
+    left: 85%;
+    background: radial-gradient(circle, #d1ca0b 0%, transparent 70%);
+    animation-delay: 4s;
+  }
+  .flower6 {
+    top: 35%;
+    left: 85%;
+    background: radial-gradient(circle, #2f0bd1 0%, transparent 70%);
+    animation-delay: 4s;
+  }
+  /* Blooming animation */
+  @keyframes bloomFlower {
+    0%, 100% {
+      transform: scale(0.5) rotate(0deg);
+      opacity: 0.2;
+    }
+    50% {
+      transform: scale(2.2) rotate(270deg);
+      opacity: 0.6;
+    }
+  }
+  
+  /* === UI Styles === */
+  
+  header {
+    background: #080005;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff0090;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f807ab;
+  }
+  
+  .hero h1 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .highlight {
+    color: #ff00a6;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #ab116b;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .aboutme {
+    background: #270115;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 18px;
+  }
+  
+  .project-card {
+    background: #270115;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  .Btech, .Intermediate {
+    background: #270115;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 18px;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  .skill-list li {
+    background: #270115;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  .contact {
+    background: #270115;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 18px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #270115;
+  }
+  
